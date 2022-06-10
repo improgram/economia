@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+        <head>
+            <title>Eventos</title>
+            <meta charset="utf-8"/>
+            <link rel="stylesheet" type="text/css" href="...css">
+        </head>
+
+    <body>
+
+	<script src="jquery-3.3.1.min.js"></script>
+	<!--  <script type="text/javascript" src="... .js">
+	</script>  -->
+	<noscript>Esta pagina utiliza scripts e seu navegador não é capaz de interpretá-los.</noscript>
+    </body>
+</html>
