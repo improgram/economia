@@ -12,7 +12,7 @@ body {
     height: auto;
     text-align: center;
     /*https://cssgradient.io/    */
-    background-image: radial-gradient( circle at 30% 70%,  rgb(78, 19, 77) 8.3%, rgba(15,51,92,1) 79.4%, rgb(78, 19, 77) );
+    background-image: radial-gradient(rgb(75, 22, 74), rgba(15,51,92,1), rgb(75, 22, 74) );
     -webkit-display: -webkit-box;
     -webkit-display: -webkit-flex;
     display: -webkit-box;
@@ -31,41 +31,54 @@ header {
     top: 0;
     width: 100%;
     height: 10%;
-    background-image: radial-gradient( circle, rgb(54, 20, 54) 8%, rgb(7, 33, 63) 40%, rgb(54, 20, 54) );
-    text-shadow: 1px 1px 0px rgb(236, 240, 2); /*sombreamento das fontes*/
+    background-image: radial-gradient(circle, rgb(54, 20, 54), rgb(7, 33, 63), rgb(54, 20, 54) );  
+}
+
+.titulo {
+    text-align: left;
 }
 
 .cabecalho-nav {
     text-align: right;
-    
+    transition: all 6s ease-out;
 }
 
 .principal {
     margin: 0 auto;
-}
-
-section {
-    background-color: #4f325f;
     color: #eee;
-    padding: 1em;
-}
-
-.content {
     -webkit-flex-grow: 1;
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
+    padding: 2em;
 }
 
-object img {
-    max-width: 400px;
+.principal img {
+    max-width: 340px;
+}
 
+.principal img:hover {
+    transition-duration: 1.2s;
+    transform: scale(1.2);
+    width: 420px;
+    border-radius: 14%;
+}
+
+.intro {
+    background-image: radial-gradient( rgb(105, 47, 104), rgb(26, 62, 104) 20%, rgb(75, 22, 74) );
+}
+
+.diversos{
+    background-image: radial-gradient( rgb(105, 47, 104), rgb(26, 62, 104) 20%, rgb(75, 22, 74) );
+}
+
+a {
+    color: white;
 }
 
 footer {
-    /*clear: both; Limpa o float*/
-    
-    background: radial-gradient(circle, rgb(134, 96, 132) 0%, rgba(92,76,130,1) 100%, rgb(134, 96, 132));
+    /*clear: both; Limpa o float*/   
+    background: radial-gradient( rgb(134, 96, 132) 0%, rgba(92,76,130,1) 100%, rgb(134, 96, 132));
     text-shadow: 1px 1px 1px rgb(218, 221, 28);
     font-family: sans-serif;
     color:rgb(245, 245, 238);
