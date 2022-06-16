@@ -43,9 +43,12 @@ header {
     transition: all 6s ease-out;
 }
 
+.link {
+    color: rgb(231, 231, 214);
+}
+
 .principal {
     margin: 0 auto;
-    color: #eee;
     -webkit-flex-grow: 1;
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
@@ -53,38 +56,74 @@ header {
     padding: 2em;
 }
 
+.subtitulo {
+    /*background-image: radial-gradient(ellipse, rgb(46, 46, 100), rgb(53, 13, 53));*/
+    font-family: Arial;
+    text-align: left;
+    padding-top: 1em;
+    align-items: center; /*nao funcionou */
+    height: 3em;
+    animation: animate 5s linear infinite; 
+    /*animation: blinkTextCursor 800ms steps(44) infinite normal;*/
+    /*https://www.cupcom.com.br/programacao/15-efeitos-de-digitacao-de-texto-com-css.html
+    */
+}
+
+@keyframes blinkTextCursor {
+    from {
+      border-right-color: black;
+    }
+    to {
+      border-right-color: transparent;
+    }
+}
+
 .principal img {
-    max-width: 340px;
+    max-width: 300px;
 }
 
 .principal img:hover {
     transition-duration: 1.2s;
     transform: scale(1.2);
-    width: 420px;
+    width: 400px;
     border-radius: 14%;
 }
 
-.intro {
-    background-image: radial-gradient( rgb(105, 47, 104), rgb(26, 62, 104) 20%, rgb(75, 22, 74) );
-}
+@keyframes animate {
+    0% {
+        opacity: 0.3;
+    }
 
-.diversos{
-    background-image: radial-gradient( rgb(105, 47, 104), rgb(26, 62, 104) 20%, rgb(75, 22, 74) );
-}
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0.9;
+    }
+}    
 
 a {
     color: white;
 }
 
-footer {
+.copyright {
+    font-size: small;
+    text-align: left;
+}
+
+#rodape {
     /*clear: both; Limpa o float*/   
     background: radial-gradient( rgb(134, 96, 132) 0%, rgba(92,76,130,1) 100%, rgb(134, 96, 132));
     text-shadow: 1px 1px 1px rgb(218, 221, 28);
     font-family: sans-serif;
     color:rgb(245, 245, 238);
+    transition-duration: .3s;
 }
 
 footer img {
+    height: 30px;
+    width: 28px;
     border-radius: 50%;
     animation: animate 4s linear infinite;
 }
