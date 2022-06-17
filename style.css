@@ -56,28 +56,6 @@ header {
     padding: 2em;
 }
 
-.subtitulo {
-    /*background-image: radial-gradient(ellipse, rgb(46, 46, 100), rgb(53, 13, 53));*/
-    font-family: Arial;
-    text-align: left;
-    padding-top: 1em;
-    align-items: center; /*nao funcionou */
-    height: 3em;
-    animation: animate 5s linear infinite; 
-    /*animation: blinkTextCursor 800ms steps(44) infinite normal;*/
-    /*https://www.cupcom.com.br/programacao/15-efeitos-de-digitacao-de-texto-com-css.html
-    */
-}
-
-@keyframes blinkTextCursor {
-    from {
-      border-right-color: black;
-    }
-    to {
-      border-right-color: transparent;
-    }
-}
-
 .principal img {
     max-width: 300px;
 }
@@ -85,23 +63,64 @@ header {
 .principal img:hover {
     transition-duration: 1.2s;
     transform: scale(1.2);
-    width: 400px;
+    width: 360px;
     border-radius: 14%;
+}
+
+.subtitulo {
+    font-family: Arial;
+    text-align: left;
+    padding-top: 1em;
+    height: 1.2em;
+    animation: animate 5s linear infinite;
+    /* https://www.cupcom.com.br/programacao/15-efeitos-de-digitacao-de-texto-com-css.html
+    background-color: radial-gradient(rgb(46, 5, 45), rgba(15,51,92,1), rgb(75, 22, 74) );
+    */
 }
 
 @keyframes animate {
     0% {
-        opacity: 0.3;
+        opacity: 0.2;
+        background-color: rgb(46, 22, 45);
+        width: 500px;
     }
 
-    50% {
-        opacity: 0.5;
+    20% {
+        opacity: 0.4;
+        background-color: rgb(56, 22, 75);
+        width: 550px;
     }
+
+    40% {
+        opacity: 0.6;
+        background-color: rgb(66, 22, 75);
+        width: 600px;
+    }    
+
+    60% {
+        opacity: 0.8;
+        background-color: rgb(76, 22, 75);
+        width: 650px;
+    }
+    
+    80% {
+        opacity: 1.0;
+        background-color: rgb(86, 22, 75);
+        width: 700px;
+    }
+
+    90% {
+        opacity: 1.0;
+        background-color: rgb(56, 22, 75);
+        width: 700px;
+    } 
 
     100% {
-        opacity: 0.9;
+        opacity: 1.2;
+        background-color: rgb(46, 22, 75);
+        max-width: auto;
     }
-}    
+} 
 
 a {
     color: white;
@@ -125,5 +144,4 @@ footer img {
     height: 30px;
     width: 28px;
     border-radius: 50%;
-    animation: animate 4s linear infinite;
 }
