@@ -57,66 +57,64 @@ header {
 }
 
 .principal img {
-    max-width: 300px;
+    max-width: 290px;
 }
 
 .principal img:hover {
     transition-duration: 1.2s;
     transform: scale(1.2);
-    width: 360px;
+    width: 350px;
     border-radius: 14%;
 }
 
 .subtitulo {
     font-family: Arial;
     text-align: left;
-    padding-top: 1em;
+    padding: 1rem 0rem 1rem 0rem;
+    margin: 1rem 0rem 1rem 0rem;
     height: 1.2em;
-    animation: animate 5s linear infinite;
-    /* https://www.cupcom.com.br/programacao/15-efeitos-de-digitacao-de-texto-com-css.html
-    background-color: radial-gradient(rgb(46, 5, 45), rgba(15,51,92,1), rgb(75, 22, 74) );
-    */
+    animation: animate 6s alternate linear infinite;
+
 }
 
 @keyframes animate {
+    from {
+        opacity: 0.3;
+    } to {
+        opacity: 1;
+    }
+
     0% {
-        opacity: 0.2;
         background-color: rgb(46, 22, 45);
-        width: 500px;
+        width: 245px;
     }
 
     20% {
-        opacity: 0.4;
         background-color: rgb(56, 22, 75);
-        width: 550px;
+        width: 255px;
     }
 
     40% {
-        opacity: 0.6;
         background-color: rgb(66, 22, 75);
-        width: 600px;
+        width: 265px;
     }    
 
     60% {
-        opacity: 0.8;
         background-color: rgb(76, 22, 75);
-        width: 650px;
+        width: 275px;
     }
     
     80% {
-        opacity: 1.0;
         background-color: rgb(86, 22, 75);
-        width: 700px;
+        width: 280px;
     }
 
     90% {
-        opacity: 1.0;
         background-color: rgb(56, 22, 75);
-        width: 700px;
+        width: 285px;
     } 
 
     100% {
-        opacity: 1.2;
         background-color: rgb(46, 22, 75);
         max-width: auto;
     }
