@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    font-family: 'Sergoe UI', Tahoma, 'Helvetica Neue', Helvetica;
 }
 
 body {
     font-size: 1.1em;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: white;
     width: 100%;
     height: auto;
@@ -53,11 +53,12 @@ header {
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
-    padding: 2em;
 }
 
 .principal img {
     max-width: 290px;
+    box-shadow: 1px 1px 1px 1px rgb(102, 64, 133);
+    padding: 1em;
 }
 
 .principal img:hover {
