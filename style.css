@@ -70,18 +70,12 @@ header {
 
 .subtitulo {
     font-family: Arial;
-    text-align: left;
     padding: 1rem 0rem 1rem 0rem;
     margin: 1rem 0rem 1rem 0rem;
     height: 1.2em;
+    /*
     animation: animate 8s alternate linear infinite;
-}
-
-.conjunto {
-    float: none; /* nada */
-    animation-iteration-count: 1;
-    animation-iteration-count: animate 1;
-    animation-fill-mode: normal;
+    text-align: left;*/
 }
 
 .conjunto img {
