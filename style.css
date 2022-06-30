@@ -6,10 +6,8 @@
 }
 
 body {
-    font-size: 1.1em;
     color: white;
-    width: 100%;
-    height: auto;
+    margin: 0 auto;
     text-align: center;
     /*https://cssgradient.io/    */
     background-image: radial-gradient(rgb(75, 22, 74), rgba(16,61,92), rgb(75, 22, 74) );
@@ -24,6 +22,10 @@ body {
         -ms-flex-direction: column;
     flex-direction: column;
     min-height: 100vh;
+    /*font-size: 1.1em; 
+    width: 100%;
+    height: auto;
+    */
 }
 
 header {
@@ -48,78 +50,72 @@ header {
 }
 
 .principal {
-    margin: 0 auto;
-    -webkit-flex-grow: 1;
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
+    color: rgb(170, 172, 207);
 }
 
 .principal img {
-    max-width: 290px;
-    box-shadow: 1px 1px 1px 1px rgb(102, 64, 133);
+    max-width: 250px;
+    box-shadow: 1px 1px 1px 1px rgb(71, 64, 133);
     padding: 1em;
+    float: center;
 }
 
 .principal img:hover {
     transition-duration: 1.2s;
-    transform: scale(1.2);
-    width: 350px;
+    transform: scale(1.5);
+    width: 400px;
     border-radius: 14%;
 }
 
 .subtitulo {
-    font-family: Arial;
-    padding: 1rem 0rem 1rem 0rem;
-    margin: 1rem 0rem 1rem 0rem;
-    height: 1.2em;
-    /*
-    animation: animate 8s alternate linear infinite;
-    text-align: left;*/
+    border: 2px ridge rgb(49, 124, 168);
+    background: rgb(31, 73, 112);
+    width: 100%;
+    overflow: hidden;
 }
 
-.conjunto img {
-    float: none; /* nada */
+.para {
+    clear: both;
+    white-space: nowrap; 
+    /*espaço em branco: sumprime as quebras de linha*/
+    /*font-weight: bold;
+    float: left;
+    /*display: flow-root;
+    display: inline-block;*/
 }
+
+/*
+.intro {
+    white-space: nowrap;
+    display: inline-block;
+    display: flow-root;
+}
+*/
 
 @keyframes animate {
     from {
         opacity: 0.3;
     } to {
         opacity: 1;
-    }
-
-    0% {
+    } 0% {
         background-color: rgb(161, 71, 158);
         width: 245px;
-    }
-
-    20% {
+    } 20% {
         background-color: rgb(115, 52, 151);
         width: 255px;
-    }
-
-    40% {
+    } 40% {
         background-color: rgb(108, 79, 114);
         width: 265px;
-    }    
-
-    60% {
+    } 60% {
         background-color: rgb(172, 100, 170);
         width: 275px;
-    }
-    
-    80% {
+    } 80% {
         background-color: rgb(121, 69, 163);
         width: 280px;
-    }
-
-    90% {
+    } 90% {
         background-color: rgb(150, 97, 117);
         width: 285px;
-    } 
-
-    100% {
+    } 100% {
         background-color: rgb(105, 71, 185);
         max-width: auto;
     }
@@ -135,7 +131,6 @@ a {
 }
 
 #rodape {
-    /*clear: both; Limpa o float*/   
     background: radial-gradient( rgb(134, 96, 132) 0%, rgba(92,76,130,1) 100%, rgb(134, 96, 132));
     text-shadow: 1px 1px 1px rgb(218, 221, 28);
     font-family: sans-serif;
@@ -145,6 +140,11 @@ a {
 
 footer img {
     height: 30px;
-    width: 28px;
+    width: 26px;
     border-radius: 50%;
+}
+
+footer svg {
+    width: 27px;
+    height: 27px;
 }
