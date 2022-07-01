@@ -54,7 +54,7 @@ header {
 }
 
 .principal img {
-    max-width: 250px;
+    max-width: 220px;
     box-shadow: 1px 1px 1px 1px rgb(71, 64, 133);
     padding: 1em;
     float: center;
@@ -63,7 +63,7 @@ header {
 .principal img:hover {
     transition-duration: 1.2s;
     transform: scale(1.5);
-    width: 400px;
+    width: 380px;
     border-radius: 14%;
 }
 
@@ -141,7 +141,7 @@ a {
 footer img {
     height: 30px;
     width: 26px;
-    border-radius: 50%;
+    border-radius: 99%;
 }
 
 footer svg {
