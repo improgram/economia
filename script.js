@@ -13,8 +13,15 @@
 
 let para = document.getElementsByClassName("para");
 
+	for (let value of para){
+		animate(value);
+	}
+
+/* 
+Outra soluçao que funciona mas com erro no SonarLint Rule:
 	for(var i = 0; i < para.length; i++){
 		animate(para[i]);
 	}
+*/
 
 // https://www.youtube.com/watch?v=bHRXRYTppHM

@@ -49,10 +49,6 @@ header {
     color: rgb(231, 231, 214);
 }
 
-.principal {
-    color: rgb(170, 172, 207);
-}
-
 .principal img {
     max-width: 220px;
     box-shadow: 1px 1px 1px 1px rgb(71, 64, 133);
@@ -63,7 +59,7 @@ header {
 .principal img:hover {
     transition-duration: 1.2s;
     transform: scale(1.5);
-    width: 380px;
+    width: 360px;
     border-radius: 14%;
 }
 
@@ -77,20 +73,8 @@ header {
 .para {
     clear: both;
     white-space: nowrap; 
-    /*espaço em branco: sumprime as quebras de linha*/
-    /*font-weight: bold;
-    float: left;
-    /*display: flow-root;
-    display: inline-block;*/
+    font-weight: bold;
 }
-
-/*
-.intro {
-    white-space: nowrap;
-    display: inline-block;
-    display: flow-root;
-}
-*/
 
 @keyframes animate {
     from {
