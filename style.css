@@ -50,16 +50,17 @@ header {
 }
 
 .principal img {
-    max-width: 220px;
+    width: 180px;
+    max-width: 48%;
     box-shadow: 1px 1px 1px 1px rgb(71, 64, 133);
-    padding: 1em;
+    padding: 0.1em;
     float: center;
 }
 
 .principal img:hover {
     transition-duration: 1.2s;
     transform: scale(1.5);
-    width: 360px;
+    max-width: 360px;
     border-radius: 14%;
 }
 
