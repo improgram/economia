@@ -9,20 +9,39 @@
             <link rel="stylesheet" type="text/css" href="style.css">
         </head>
     <body>
-        <header class="cabecalho">
-            <div class="container">
-                <h3 class="titulo">Educação Financeira</h3>
-                <nav class="cabecalho-nav">
-                    <a class="link" href="index.html">Inicio</a>
-                    <a class="link" href="index.html">Links Uteis</a>
-                    <a class="link" href="https://improgram.github.io/casadocodigo" target="_blank">Projetos</a>
-                    <a class="link" href="#rodape">Contato</a>
-                </nav>
-            </div>
+        <header>
+            <h3 class="titulo">Educação Financeira</h3>
+            <nav id="cabecalho">
+                <ul class="menu">
+                    <li><a href="#subtitulo">Inicio</a>
+                        <ul>
+                            <li><a href="#intro">Introdução</a></li>
+                            <li><a href="#">Diversificação</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li><a href="#">7</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" target="_blank">Links</a>
+                        <ul>
+                            <li><a href="https://www.infomoney.com.br" target="_blank">Infomoney</a></li>
+                            <li><a href="https://www.br.investing.com/equities/" target="_blank">Investing Ibovespa</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" target="_blank">Projetos</a>
+                        <ul>
+                            <li><a href="https://improgram.github.io/casadocodigo" target="_blank">Casa do Codigo</a></li>
+                        </ul>
+                    </li>              
+                    <li><a href="#rodape">Contato</a></li>
+                </ul>    
+            </nav>
         </header>
         <main class="principal">
-            <h4>Finanças pessoais e Mercado Financeiro</h4>
-            <div class="subtitulo"><p class="para">Introdução Finanças Pessoais</p></div>                       
+            <h4 id="subtitulo">Finanças pessoais e Mercado Financeiro</h4>
+            <div class="subtitulo"><p class="para" id="intro">Introdução Finanças Pessoais</p></div>                       
                     <img src="img/conceitos-matematica-financeira.JPG" alt="matematica-financeira" />
                     <img src="img/mentalidade-empreendedora.JPG" alt="Mentalidade empreendedora" />
                     <img src="img/organizar-suas-financas.JPG" alt="Organização de Finanças" />
