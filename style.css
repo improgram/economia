@@ -6,7 +6,7 @@
 }
 
 body {
-    color: white;
+    color: rgb(233, 220, 148);
     margin: 0 auto;
     text-align: center;
     /*https://cssgradient.io/    */
@@ -43,14 +43,14 @@ header {
 
 .menu {
     list-style: none;
-    border: 1px solid #c0c0c0;
+    border: 1px solid #39207c;
     float: right;
 }
 
 .menu li {
     position: relative;
     float: left;
-    border-right: 1px solid #c0c0c0;
+    border-right: 1px solid #43119e;
     word-spacing: 10px; /* ?? */
 }
 
@@ -87,6 +87,11 @@ header {
     width: 150px;
 }
 
+#rotulo {
+    color:#CCC;
+    margin: 10px;
+}
+
 .principal img {
     width: 180px;
     max-width: 48%;
@@ -98,15 +103,18 @@ header {
 .principal img:hover {
     transition-duration: 1.2s;
     transform: scale(1.5);
-    max-width: 360px;
     border-radius: 14%;
+    max-width: 48%; /*360px;*/
+    margin: 1% 1% 1% 1%;
+    /*flex-wrap: wrap para nao transbordar nao deu certo */
 }
 
 .subtitulo {
-    border: 2px ridge rgb(49, 124, 168);
+    border: 2px ridge rgb(119, 75, 190);
     background: rgb(31, 73, 112);
     width: 100%;
     overflow: hidden;
+    margin: 20px 0 20px 0;
 }
 
 .para {
