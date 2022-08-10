@@ -8,7 +8,7 @@
 	        if (larguraElemento == -contador) {
 	            contador = larguraPai;
         	}
-    }, 20);
+    }, 15);
 }
 
 let para = document.getElementsByClassName("para");
