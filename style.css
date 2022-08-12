@@ -91,7 +91,7 @@ header {
 .principal img {
     width: 170px;
     box-shadow: 1px 1px 1px 1px rgb(71, 64, 133);
-    padding: 0.2em;
+    padding: 0.1em;
     float: center;
     display: inline;
     /*white-space: pre-line; nao deu efeito */
@@ -100,13 +100,13 @@ header {
 
 .principal img:hover {
     transition-duration: 1.2s;
-    transform: scale(1.5);
+    transform: scale(1.8);
     border-radius: 14%;
     margin: 0 2% 0 2%;
 }
 
 .subtitulo {
-    border: 2px ridge rgb(119, 75, 190);
+    border: 1px ridge rgb(119, 75, 190);
     background-image: radial-gradient(rgb(31, 73, 112), rgba(52, 30, 112, 0.938) );
     width: 100%;
     overflow: hidden;
