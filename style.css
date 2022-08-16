@@ -45,7 +45,7 @@ header {
 .menu li {
     position: relative;
     float: left;
-    word-spacing: 10px;
+    word-spacing: 2px;
 }
 
 .menu li a {
@@ -78,7 +78,7 @@ header {
 .menu li ul li {
     border: 1px solid #c0c0c0;
     display: block;
-    width: 180px;
+    width: 150px;
     font-size: 0.7em;
     font-weight: lighter;
 }
@@ -93,16 +93,15 @@ header {
     box-shadow: 1px 1px 1px 1px rgb(71, 64, 133);
     padding: 0.1em;
     float: center;
-    display: inline;
-    /*white-space: pre-line; nao deu efeito */
-    /* margin: 0 1% 0 1%;  justify-content: space-between ? */
+    /* display: inline;  */
 }
 
 .principal img:hover {
     transition-duration: 1.2s;
     transform: scale(1.8);
-    border-radius: 14%;
-    margin: 0 2% 0 2%;
+    border-radius: 12%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .subtitulo {
@@ -111,6 +110,11 @@ header {
     width: 100%;
     overflow: hidden;
     margin: 20px 0 20px 0;
+}
+
+.subtitulo:hover {
+    color: white;
+    text-transform: uppercase;
 }
 
 .para {
