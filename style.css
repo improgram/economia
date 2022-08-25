@@ -127,6 +127,7 @@ header {
     transition-duration: 1.2s;
     transform: scale(1.8);
     border-radius: 12%;
+    /* object-fit: scale-down; */
     /* transform: translate(-50%, 50%); */
     /* object-fit: cover; */
     /* display: inline-block; */
