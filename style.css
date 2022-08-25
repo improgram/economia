@@ -94,6 +94,8 @@ header {
     font-size: larger;
 }
 
+/* https://qastack.com.br/programming/1891857/how-do-you-stretch-an-image-to-fill-a-div-while-keeping-the-images-aspect-rat */
+
 .subtitulo:hover {
     color: rgb(233, 226, 168);
     font-size:larger;
