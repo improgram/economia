@@ -85,8 +85,8 @@ header {
 
 .principal {
     display: flex; /* Lado a lado */
-    flex-wrap: wrap; /* Quebra de linha  e row (padrao) */
-    justify-content: safe center;
+    flex-wrap: wrap; /* Quebra de linha e row (padrao) */
+    justify-content: center;
     /*space-between/center/space-around/distribuicao */
 }
 
@@ -110,26 +110,26 @@ header {
 }
 
 .subtitulo img {
-    width: 170px;
     box-shadow: 1px 1px 1px 1px rgb(71, 64, 133);
-    padding: 0.1em;
+    text-align: center;
+    height: auto; 
+    width: auto; 
+    max-width: 180px; 
+    max-height: 180px;
+    /* width: 170px; */
+    /* position: relative; */
+    /* padding: 0.1em; */
     /* display: inline-block; */
-}
-
-.subtitulo img::after {
-    content: attr(data-title);
-    position: absolute;
-    width: 100%;
-    bottom: -20px;
-    left: 0;
 }
 
 .subtitulo img:hover {
     transition-duration: 1.2s;
     transform: scale(1.8);
     border-radius: 12%;
+    /* transform: translate(-50%, 50%); */
+    /* object-fit: cover; */
     /* display: inline-block; */
-    /* justify-content: center;*/
+    /* justify-content: center; */
     /* padding-block: 0 10px; */
     /* margin-left: 1%; */
     /* margin-right: 1% */
@@ -142,7 +142,15 @@ header {
     /* float: center;*/
 }
 
-
+/*
+.subtitulo img::after {
+    content: attr(data-title);
+    position: absolute;
+    width: 100%;
+    bottom: -20px;
+    left: 0;
+}
+*/
 
 @keyframes animate {
     from {
