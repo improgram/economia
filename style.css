@@ -115,12 +115,13 @@ header {
     transition-duration: 1.3s;
     transform: scale(1.7);
     border-radius: 10%;
-    max-width: 50%;
     padding: 0.2% 0.1% 0.2% 0.1%;
-    margin: 0 7% 0 7%;
+    margin: 0 5% 0 5%;
+    /* max-width: 50%; */
 }
 
 /*
+https://www.tutoriart.com.br/como-criar-efeitos-de-transicao-suave-com-css/
 https://canaltech.com.br/mercado/como-testar-um-site-em-diferentes-resolucoes-de-tela/
 .subtitulo img::after {
     content: attr(data-title);
