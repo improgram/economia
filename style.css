@@ -132,7 +132,7 @@ header {
 
 @media screen and (orientation: portrait) {
     .subtitulo img:hover {
-        max-width: 80%;
+        max-width: 90%;
       }
     }
 
