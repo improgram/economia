@@ -24,7 +24,7 @@ body {
 header {
     position: sticky;
     top: 0;
-    height: 8em;
+    height: auto; /*8em;*/
     background-image: radial-gradient(circle, rgb(78, 23, 78), rgb(11, 57, 110), rgb(77, 27, 107) );  
     text-transform: uppercase;
 }
@@ -111,13 +111,15 @@ header {
     box-shadow: 1px 1px 1px 1px rgb(71, 64, 133);
     max-width: 180px;  /*170 ? */
     max-height: auto;
-    display: inline; /* lado a lado*/
+    /* display: inline; */  /* lado a lado*/
+    transition: 3s ease;
 }
 
 .subtitulo img:hover {
     border-radius: 10%;
-    zoom: 1.5; 
-    /* transform: scale(1.6);*/
+    zoom: 1.5;
+   
+    /* transform: scale(1.6); */
     /* transition-duration: 2s; */
     /* margin: auto;  */
     /* padding: 0; */
@@ -130,6 +132,7 @@ header {
 }
 
 /*
+https://bonstutoriais.com.br/como-fazer-um-efeito-de-sobreposicao-de-imagem-simples-com-html-e-css/
 https://www.tutoriart.com.br/como-criar-efeitos-de-transicao-suave-com-css/
 https://canaltech.com.br/mercado/como-testar-um-site-em-diferentes-resolucoes-de-tela/
 .subtitulo img::after {
