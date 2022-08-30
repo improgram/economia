@@ -80,8 +80,6 @@ header {
     font-weight: lighter;
 }
 
-/* https://qastack.com.br/programming/1891857/how-do-you-stretch-an-image-to-fill-a-div-while-keeping-the-images-aspect-rat */
-
 .principal {
     display: flex;
     flex-direction: column;
@@ -111,16 +109,17 @@ header {
     box-shadow: 1px 1px 1px 1px rgb(71, 64, 133);
     max-width: 180px;  /*170 ? */
     max-height: auto;
-    /* display: inline; */  /* lado a lado*/
     transition: 3s ease;
+    /* display: inline; */  /* lado a lado*/
 }
 
-.subtitulo img:hover {
+.subtitulo img:active {
     border-radius: 10%;
-    zoom: 1.5;
-   
+    max-width: 25%;
+    /* zoom: 1.5; */
+    /* object-fit: scale-down; */
     /* transform: scale(1.6); */
-    /* transition-duration: 2s; */
+    /* transition-duration: 3s; */
     /* margin: auto;  */
     /* padding: 0; */
     /* text-align: center; */
@@ -131,7 +130,14 @@ header {
     /* max-width: 50%; */
 }
 
+@media screen and (orientation: portrait) {
+    .subtitulo img:hover {
+        max-width: 80%;
+      }
+    }
+
 /*
+https://stackoverflow.com/questions/787839/resize-image-proportionally-with-css
 https://bonstutoriais.com.br/como-fazer-um-efeito-de-sobreposicao-de-imagem-simples-com-html-e-css/
 https://www.tutoriart.com.br/como-criar-efeitos-de-transicao-suave-com-css/
 https://canaltech.com.br/mercado/como-testar-um-site-em-diferentes-resolucoes-de-tela/
