@@ -24,7 +24,7 @@ body {
 header {
     position: sticky;
     top: 0;
-    height: auto; /*8em;*/
+    height: auto; /* ou 8em;*/
     background-image: radial-gradient(circle, rgb(78, 23, 78), rgb(11, 57, 110), rgb(77, 27, 107) );  
     text-transform: uppercase;
 }
@@ -35,7 +35,7 @@ header {
 
 .menu {
     float: right;
-    font-size: clamp(0.2rem, 0.8rem, 1.2rem); /* min, desejavel e max */
+    font-size: clamp(0.2rem, 0.8rem, 1.2rem); /* min,desejavel e max */
 }
 
 .menu li {
@@ -73,7 +73,7 @@ header {
 }
 
 .menu li ul li {
-    border: 1px groove white;
+    border: 1px ridge white;
     display: block;
     width: 140px;
     font-size: 0.7em;
@@ -88,6 +88,10 @@ header {
 #rotulo {
     font-size: larger;
     clear: both;
+}
+
+.subtitulo {
+    overflow: hidden;
 }
 
 .para {
@@ -107,49 +111,24 @@ header {
 
 .subtitulo img {
     box-shadow: 1px 1px 1px 1px rgb(71, 64, 133);
-    max-width: 180px;  /*170 ? */
+    max-width: 170px;
     max-height: auto;
-    transition: 3s ease;
+    transition: 20s ease;
     padding: 1% 2%;
-    /* display: inline; */  /* lado a lado*/
+    border-radius: 10%;
 }
 
 .subtitulo img:hover {
-    border-radius: 10%;
+    border-radius: 20%;
     zoom: 1.5;
-    /* max-width: 25%; */
-    /* object-fit: scale-down; */
-    /* transform: scale(1.6); */
-    /* transition-duration: 3s; */
-    /* margin: auto;  */
-    /* padding: 0; */
-    /* text-align: center; */
-    /* top: 50%; */
-    /* left: 50%; */
-    /* padding: 0.2% 0.1% 0.2% 0.1%;*/
-    /* margin: 0 5% 0 5%; */
-    /* max-width: 50%; */
 }
+
 
 @media screen and (orientation: portrait) {
     .subtitulo img:hover {
         max-width: 90%;
-      }
     }
-
-/*
-https://stackoverflow.com/questions/787839/resize-image-proportionally-with-css
-https://bonstutoriais.com.br/como-fazer-um-efeito-de-sobreposicao-de-imagem-simples-com-html-e-css/
-https://www.tutoriart.com.br/como-criar-efeitos-de-transicao-suave-com-css/
-https://canaltech.com.br/mercado/como-testar-um-site-em-diferentes-resolucoes-de-tela/
-.subtitulo img::after {
-    content: attr(data-title);
-    position: absolute;
-    width: 100%;
-    bottom: -20px;
-    left: 0;
 }
-*/
 
 @keyframes animate {
     from {
@@ -208,8 +187,3 @@ footer svg {
     height: 27px;
 }
 
-/* testar
-@media only screen and (max-device-width: 900px) {
-    .principal { width:100%; }
-}
-*/
