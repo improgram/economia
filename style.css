@@ -121,8 +121,8 @@ header {
 .subtitulo img:hover {
     border-radius: 20%;
     zoom: 1.5;
+    mask-image: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, .7), rgba(0, 0, 0, .4));
 }
-
 
 @media screen and (orientation: portrait) {
     .subtitulo img:hover {
