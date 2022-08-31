@@ -113,10 +113,10 @@ header {
     /* display: inline; */  /* lado a lado*/
 }
 
-.subtitulo img:active {
+.subtitulo img:hover {
     border-radius: 10%;
-    max-width: 25%;
-    /* zoom: 1.5; */
+    /* max-width: 25%; */
+    zoom: 1.5;
     /* object-fit: scale-down; */
     /* transform: scale(1.6); */
     /* transition-duration: 3s; */
