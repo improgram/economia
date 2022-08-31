@@ -110,13 +110,14 @@ header {
     max-width: 180px;  /*170 ? */
     max-height: auto;
     transition: 3s ease;
+    padding: 1% 2%;
     /* display: inline; */  /* lado a lado*/
 }
 
 .subtitulo img:hover {
     border-radius: 10%;
-    /* max-width: 25%; */
     zoom: 1.5;
+    /* max-width: 25%; */
     /* object-fit: scale-down; */
     /* transform: scale(1.6); */
     /* transition-duration: 3s; */
