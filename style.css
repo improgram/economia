@@ -113,9 +113,10 @@ header {
     box-shadow: 1px 1px 1px 1px rgb(71, 64, 133);
     max-width: 170px;
     max-height: auto;
-    transition: 10s ease;
+    transition: 5s linear;
+    transition-delay: 1s;
     padding: 1% 2%;
-    border-radius: 10%;
+    border-radius: 12%;
 }
 
 .subtitulo img:hover {
