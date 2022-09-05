@@ -64,11 +64,6 @@ header {
     border-radius: 30%;
 }
 
-/*
-VER
-https://medium.com/reprogramabr/5-truques-de-css-que-v%C3%A3o-fazer-a-diferen%C3%A7a-no-seu-site-1e0bba738b78
-*/
-
 .menu li ul {
     position: absolute;
     top: 20px;
@@ -99,10 +94,6 @@ https://medium.com/reprogramabr/5-truques-de-css-que-v%C3%A3o-fazer-a-diferen%C3
     clear: both;
 }
 
-.subtitulo {
-    overflow: hidden;
-}
-
 .para {
     clear: both;
     white-space: nowrap; 
@@ -122,20 +113,18 @@ https://medium.com/reprogramabr/5-truques-de-css-que-v%C3%A3o-fazer-a-diferen%C3
     box-shadow: 1px 1px 1px 1px rgb(71, 64, 133);
     max-width: 170px;
     max-height: auto;
-    transition: 5s linear;
+    transition: 3s linear;
     transition-delay: 1s;
     padding: 1% 2%;
     border-radius: 12%;
+    overflow-y: auto;
 }
 
 .subtitulo img:hover {
+    overflow-y: scroll;
     border-radius: 20%;
-    zoom: 1.5;
+    zoom: 1.7;
 }
-/*
-VER: 
-https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions
-*/
 
 @media screen and (orientation: portrait) {
     .subtitulo img:hover {
