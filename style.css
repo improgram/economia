@@ -23,9 +23,9 @@ body {
 header {
     position: sticky;
     top: 0;
-    height: auto; /* ou 8em;*/
-    background-image: radial-gradient(circle, rgb(78, 23, 78), rgb(11, 57, 110), rgb(77, 27, 107) );  
-    text-transform: uppercase;
+    font-size: clamp(0.2rem, 0.8rem, 1.2rem);
+    height: 6em;
+    background-image: radial-gradient(circle, rgb(78, 23, 78), rgb(11, 57, 110), rgb(77, 27, 107) );
 }
 
 .titulo {
@@ -34,7 +34,6 @@ header {
 
 .menu {
     float: right;
-    font-size: clamp(0.2rem, 0.8rem, 1.2rem); /* min,desejavel e max */
 }
 
 .menu li {
@@ -47,9 +46,9 @@ header {
 .menu li a {
     color: rgb(233, 219, 219);
     text-decoration: none;
-    padding: 5px 5px;
+    padding: 1px 5px;
     display: block;
-    
+    border-radius: 40%;
 }
 
 .menu li a:focus,
@@ -57,14 +56,13 @@ header {
     background: #333;
     color: #fff;
     text-shadow: 0px 0px 5px #fff;
-    border-radius: 30%;
 }
 
 .menu li ul {
-    position: absolute;
-    top: 20px;
-    background-color: rgb(11, 29, 77);
+    position: absolute;  
+    background-color: rgba(25, 44, 99, 0.945);
     display: none;
+    top: 20px;
 }
 
 .menu li:hover ul, .menu li.over ul {
@@ -72,12 +70,11 @@ header {
 }
 
 .menu li ul li {
-    border: 1px ridge rgb(76, 34, 124);
+    border: 1px ridge rgba(20, 40, 90, 0.897);
     display: block;
     width: 140px;
     font-size: 0.7em;
     font-weight: lighter;
-    border-radius: 30%;
 }
 
 .principal {
@@ -182,6 +179,3 @@ header {
         box-shadow: 0 0 0 6px rgba(98, 65, 141, 0.7), 0 0 0 0 rrgba(81, 47, 145, 0.7)
     }
 }
-
-
-
