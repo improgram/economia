@@ -26,6 +26,7 @@ header {
     font-size: clamp(0.2rem, 0.8rem, 1.2rem);
     height: 6em;
     background-image: radial-gradient(circle, rgb(78, 23, 78), rgb(11, 57, 110), rgb(77, 27, 107) );
+    /* display: flex; nao funcionou */
 }
 
 .titulo {
@@ -41,12 +42,13 @@ header {
     float: left;
     list-style: none;
     font-size: 1.2em;
+
 }
 
 .menu li a {
     color: rgb(233, 219, 219);
     text-decoration: none;
-    padding: 1px 5px;
+    padding: 10px 10px;
     display: block;
     border-radius: 40%;
 }
@@ -62,7 +64,7 @@ header {
     position: absolute;  
     background-color: rgba(25, 44, 99, 0.945);
     display: none;
-    top: 20px;
+    top: 30px;
 }
 
 .menu li:hover ul, .menu li.over ul {
@@ -70,10 +72,10 @@ header {
 }
 
 .menu li ul li {
-    border: 1px ridge rgba(20, 40, 90, 0.897);
+    border: 1px ridge rgba(47, 58, 87, 0.897);
     display: block;
-    width: 140px;
-    font-size: 0.7em;
+    width: 145px;
+    font-size: 0.8em;
     font-weight: lighter;
 }
 
