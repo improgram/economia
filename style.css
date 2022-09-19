@@ -72,7 +72,7 @@ header {
 }
 
 .menu li ul li {
-    border: 1px ridge rgba(47, 58, 87, 0.897);
+    border: 1px ridge rgba(96, 111, 153, 0.897);
     display: block;
     width: 145px;
     font-size: 0.8em;
