@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Sergoe UI', Tahoma, 'Helvetica Neue', Helvetica;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: rgb(238, 233, 206);
+    text-align: center;
+    background-image: radial-gradient(rgb(75, 22, 74),
+    rgba(16,61,92), rgb(35, 79, 116) ,rgb(75, 22, 74));
+    -webkit-display: -webkit-box;
+    -webkit-display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    font-size: 0.8em;
+    font-weight: bold;   
+}
+
+header {
+    position: sticky;
+    top: 0;
+    font-size: clamp(0.2rem, 0.8rem, 1.2rem);
+    height: 6em;
+    background-image: radial-gradient(circle, rgb(78, 23, 78), rgb(11, 57, 110), rgb(77, 27, 107) );
+}
+
+.titulo {
+    text-align: left;
+}
+
+.menu {
+    float: right;
+}
+
+.menu li {
+    position: relative;
+    float: left;
+    list-style: none;
+}
+
+.menu li a {
+    color: rgb(233, 219, 219);
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+    border-radius: 40%;
+}
+
+.menu li a:focus, a:hover {
+    background: #272626;
+    font-size: 15px;
+    text-shadow: 0px 1px 1px #fff;
+}
+
+.menu li ul {
+    position: absolute;  
+    background-color: rgba(25, 44, 99, 0.945);
+    display: none;   /* submenu fica oculto */
+}
+
+.menu li:hover ul { 
+    display: block;
+}
+
+.menu li ul li a {
+    border: 0.1px ridge rgba(17, 30, 68, 0.945);
+    width: 160px;
+    padding: 1px;
+    font-size: 0.9em;
+    font-weight: lighter;
+}
+
+.fav::before {      /*"★";*/
+    content: "\2605";
+    color: gold;
+}
+
+.menu li ul li:hover {
+    font-size: 16px;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+}
+
+#rotulo {
+    font-size: larger;
+    clear: both;
+}
+
+.para {
+    clear: both;
+    white-space: nowrap; 
+    font-weight: bold;
+    overflow: hidden;
+    margin: 40px 0 10px 0;  
+    background-image: radial-gradient(circle, rgb(78, 23, 78), rgb(11, 57, 110), rgb(77, 27, 107) ); 
+}
+
+.para:hover {
+    color: rgb(233, 226, 168);
+    font-size: larger;
+    text-transform: uppercase;
+}
+
+.subtitulo img {
+    box-shadow: 1px 1px 1px 1px rgb(71, 64, 133);
+    max-width: 250px;
+    max-height: auto;
+    transition: 5s linear;
+    transition-delay: 1s;
+    padding: 1% 1%;
+    border-radius: 10%;
+    overflow-y: auto;
+}
+
+.subtitulo img:hover {
+    overflow-y: scroll;
+    border-radius: 10%;
+    zoom: 1.7;
+}
+
+@media screen and (orientation: portrait) {
+    .subtitulo img:hover {
+        max-width: 90%;
+    }
+}
+
+.copyright {
+    font-size: x-small;
+    text-align: left;
+    padding: 5px 0 1px 5px;
+}
+
+#rodape {
+    background: radial-gradient( rgb(134, 96, 132) 0%, rgb(43, 21, 92) 100%, rgb(134, 96, 132));
+    height: 70px;
+}
+
+#rodape img {
+    height: 27px;
+    width: 25px;
+    border-radius: 40%;
+    animation: icones 10s linear infinite;
+    margin: 1%;
+}
+
+#rodape svg {
+    height: 27px;
+    width: 27px;
+    border-radius: 30%;
+    animation: icones 10s linear infinite;
+    margin: 1%;
+}
+
+@keyframes icones {
+    0% {
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        box-shadow: 0 0 0 1px rgba(163, 113, 228, 0.7), 0 0 0 0 rgba(159, 120, 230, 0.7);
+    }
+    25% {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        box-shadow: 0 0 0 5px rgba(95, 40, 167, 0.7), 0 0 0 0 rgba(116, 59, 223, 0.7);
+    }
+    50% {
+        transform: scale(1.3);
+        -webkit-transform: scale(1.2);
+        box-shadow: 0 0 0 5px rgba(139, 94, 197, 0.7), 0 0 0 0 rgba(115, 80, 179, 0.7);
+    }
+    75% {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        box-shadow: 0 0 0 5px rgba(95, 40, 167, 0.7), 0 0 0 0 rgba(116, 59, 223, 0.7);
+    }
+    100% {
+        transform: scale(1.4);
+        -webkit-transform: scale(1.4);
+        box-shadow: 0 0 0 6px rgba(98, 65, 141, 0.7), 0 0 0 0 rrgba(81, 47, 145, 0.7)
+    }
+}
