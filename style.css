@@ -98,6 +98,7 @@ header {
     clear: both;
     white-space: nowrap; 
     font-weight: bold;
+    font-size: 20px;
     overflow: hidden;
     margin: 40px 0 10px 0;  
     background-image: radial-gradient(circle, rgb(78, 23, 78), rgb(11, 57, 110), rgb(77, 27, 107) ); 
